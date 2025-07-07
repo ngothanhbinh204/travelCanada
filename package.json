@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://ngothanhbinh204.github.io/travelCanada",
   "scripts": {
     "dev": "vite",
     "watch": "npx @tailwindcss/cli -i ./src/index.css -o ./src/output.css --watch",

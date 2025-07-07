@@ -12,6 +12,7 @@ const buttonVariants = cva(
         outline:
           "border border-input bg-transparent hover:bg-accent hover:text-accent-foreground",
         main: "button_primary",
+        has_icon: "button_primary !inline-flex",
         close:
           "bg-white rounded-xs uppercase px-5 py-3 text-xs text-link hover:bg-link hover:!text-white",
         white:

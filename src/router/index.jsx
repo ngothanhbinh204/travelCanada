@@ -7,6 +7,7 @@ import ThingsToDo from "../pages/ThingsToDo";
 import SinglePlaceToGo from "../pages/singlePlacesToGo";
 import ArticlesThingToDo from "../pages/ArticlesThingToDo";
 import PlanYourTrip from "../pages/PlanYourTrip";
+import CommingTo from "../pages/CommingTo";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="single-places-to-go" element={<SinglePlaceToGo />} />
           <Route path="articles-things-to-do" element={<ArticlesThingToDo />} />
           <Route path="plan-your-trip" element={<PlanYourTrip />} />
+          <Route path="coming-to" element={<CommingTo />} />
         </Route>
       </Routes>
     </Router>

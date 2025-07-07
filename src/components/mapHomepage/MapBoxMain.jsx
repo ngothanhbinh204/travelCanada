@@ -293,7 +293,7 @@ const MapBoxMain = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.4 }}
-              className="absolute bottom-0 lg:top-0 lg:left-0 z-50 h-auto lg:h-full w-full lg:w-[480px]"
+              className="absolute bottom-0 lg:top-0 lg:left-0 z-40 h-auto lg:h-full w-full lg:w-[480px]"
             >
               <InfoPanel
                 selectedPlace={selectedTerritory}

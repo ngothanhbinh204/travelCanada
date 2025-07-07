@@ -1,16 +1,20 @@
 import React from "react";
+import { StickyNavContext } from "../../contexts/StickyNavContext";
+
 import SearchButton from "../ui/search/SearchButton";
 import MobileMenu from "../Menu/MobileMenu";
 import DropdownMenu from "../DropdownMenu/DropdownMenu";
 import logoMain from "../../assets/images/ke-logo.webp";
 import IconChevronDown from "../icons/IconChevronDown";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useContext } from "react";
 
 const Header = () => {
   const [show, setShow] = useState(true);
   const lastScrollY = useRef(0);
   const [menu, setMenu] = useState([]);
   const [activeMenu, setActiveMenu] = useState(null);
+
+  const { isStickyNavVisible } = useContext(StickyNavContext); // get state sticky nav
 
   const hasChildren = (index) => {
     return (
@@ -47,7 +51,7 @@ const Header = () => {
     <>
       <header
         className={`bg-primary fixed top-0 z-50 w-full transition-transform ${
-          show ? "translate-y-0" : "-translate-y-full"
+          show && !isStickyNavVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
         <div className="flex items-center justify-between px-2 lg:px-10 xl:px-20">
